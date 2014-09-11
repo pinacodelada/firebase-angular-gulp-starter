@@ -1,5 +1,9 @@
 {
-  "firebase": "YOUR_FIREBASE_NAME",
+  "firebase": "crackling-fire-8187",
   "public": "build",
-  "rules": "config/security-rules.json"
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
 }

@@ -23,6 +23,8 @@ function LoginCtrl($scope, loginService, $location) {
 			});
 		}
 	};
+	
+	
 
 	$scope.createAccount = function() {
 		$scope.err = null;

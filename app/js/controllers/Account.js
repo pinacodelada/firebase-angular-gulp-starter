@@ -56,6 +56,7 @@ function AccountCtrl($scope, loginService, changeEmailService, firebaseRef, sync
 			}
 		};
 	}
+	
 	function buildEmailParms() {
 		return {
 			newEmail: $scope.newemail,
