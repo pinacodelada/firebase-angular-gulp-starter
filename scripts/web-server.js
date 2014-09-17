@@ -66,6 +66,7 @@ HttpServer.prototype.handleRequest_ = function(req, res) {
   }
 };
 
+
 /**
  * Handles static content.
  */

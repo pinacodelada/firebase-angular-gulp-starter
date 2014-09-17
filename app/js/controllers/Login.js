@@ -9,7 +9,7 @@ function LoginCtrl($scope, loginService, $location) {
 	$scope.login = function(cb) {
 		$scope.err = null;
 		if( !$scope.email ) {
-			$scope.err = 'Please enter an email address';
+			$scope.err = 'Please enter an email address!!NOW!';
 		}
 		else if( !$scope.pass ) {
 			$scope.err = 'Please enter a password';

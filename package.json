@@ -6,24 +6,25 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-html-replace": "^1.0.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-less": "^1.2.3",
+    "gulp-livereload": "^2.1.1",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-ngmin": "^0.2.0",
+    "gulp-notify": "^1.2.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-util": "^3.0.1",
     "karma": "~0.12.3",
     "karma-chrome-launcher": "~0.1.3",
     "karma-firefox-launcher": "~0.1.3",
     "karma-jasmine": "~0.1.5",
     "karma-junit-reporter": "~0.2.1",
-    "gulp": "^3.6.0",
-    "gulp-jshint": "^1.5.3",
-    "gulp-uglify": "^0.2.1",
-    "gulp-notify": "^1.2.5",
-    "gulp-concat": "^2.2.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-ngmin": "^0.2.0",
-    "gulp-clean": "^0.2.4",
-    "gulp-less": "^1.2.3",
-    "gulp-minify-css": "^0.3.0",
-    "gulp-html-replace": "^1.0.0",
     "yargs": "^1.2.1"
   },
   "scripts": {
@@ -35,8 +36,8 @@
   },
   "keywords": [
     "angular",
-	"firebase",
-	"gulp"
+    "firebase",
+    "gulp"
   ],
   "author": "Josh Strange",
   "license": "MIT",

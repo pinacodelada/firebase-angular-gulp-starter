@@ -1,5 +1,6 @@
 'use strict';
 
+
 function AccountCtrl($scope, loginService, changeEmailService, firebaseRef, syncData, $location, FBURL) {
 	$scope.syncAccount = function() {
 		$scope.user = {};
@@ -24,6 +25,7 @@ function AccountCtrl($scope, loginService, changeEmailService, firebaseRef, sync
 		$scope.emailerr = null;
 		$scope.emailmsg = null;
 	};
+	
 
 	$scope.updatePassword = function() {
 		$scope.reset();

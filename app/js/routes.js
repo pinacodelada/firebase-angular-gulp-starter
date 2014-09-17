@@ -4,7 +4,7 @@ angular.module('myApp.routes', ['ngRoute'])
 
    // configure views; the authRequired parameter is used for specifying pages
    // which should only be available while logged in
-   .config(['$routeProvider', function($routeProvider) {
+   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
       $routeProvider.when('/home', {
          templateUrl: 'partials/home.html',
          controller: 'HomeCtrl'
@@ -27,4 +27,6 @@ angular.module('myApp.routes', ['ngRoute'])
       });
 
       $routeProvider.otherwise({redirectTo: '/home'});
+
+      $locationProvider.html5Mode(true);
    }]);
