@@ -5,7 +5,6 @@ angular.module('myApp',
       ['myApp.config', 'myApp.routes', 'myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers',
          'simpleLoginTools', 'routeSecurity']
    )
-
    .run(function(loginService, $rootScope, FBURL) {
       if( FBURL === 'https://INSTANCE.firebaseio.com' ) {
          // double-check that the app has been configured
@@ -20,6 +19,7 @@ angular.module('myApp',
          $rootScope.FBURL = FBURL;
       }
    });
+
 
 angular.module('myApp.controllers', []);
 angular.module('myApp.directives', []);
