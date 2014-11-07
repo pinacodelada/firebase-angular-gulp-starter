@@ -1,0 +1,34 @@
+functions:
+  - isLoggedIn(): auth.id !== null
+
+schema:
+  type: object
+  properties:
+    messages:
+      type: object
+      $messageid:
+        type: object
+        properties:
+          text:
+            type: string
+          something:
+            type: string
+        additionalProperties: false
+        required: [text]
+        examples:
+          - {text: "hello", something: "mike"}
+        nonexamples:
+          - {something: "helllo"}
+    syncedValue:  {type: string }
+  additionalProperties: false
+  examples:
+      - {syncedValue:  string}
+      - {syncedValue:  "butt"}
+
+  nonexamples:
+      - {syncedValue:  1}
+
+access:
+  - location: /
+    read:  true
+    write: true && (isLoggedIn() || true)

@@ -10,7 +10,7 @@ function ChatCtrl($scope, syncData) {
 	// add new messages to the list
 	$scope.addMessage = function() {
 		if( $scope.newMessage ) {
-			$scope.messages.$add({text: $scope.newMessage});
+			$scope.messages.$add({text: $scope.newMessage, something: "mike"});
 			$scope.newMessage = null;
 		}
 	};

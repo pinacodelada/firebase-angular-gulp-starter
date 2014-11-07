@@ -8,28 +8,35 @@
   },
   "devDependencies": {
     "gulp": "^3.6.0",
+    "gulp-angular-templatecache": "^1.4.1",
     "gulp-clean": "^0.2.4",
     "gulp-concat": "^2.2.0",
+    "gulp-concat-sourcemap": "^1.3.1",
+    "gulp-connect": "^2.0.6",
     "gulp-html-replace": "^1.0.0",
     "gulp-jshint": "^1.5.3",
     "gulp-less": "^1.2.3",
     "gulp-livereload": "^2.1.1",
     "gulp-minify-css": "^0.3.0",
-    "gulp-ngmin": "^0.2.0",
+    "gulp-ng-annotate": "^0.3.3",
     "gulp-notify": "^1.2.5",
     "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.2.2",
     "gulp-uglify": "^0.2.1",
     "gulp-util": "^3.0.1",
+    "http-server": "^0.6.1",
     "karma": "~0.12.3",
     "karma-chrome-launcher": "~0.1.3",
     "karma-firefox-launcher": "~0.1.3",
     "karma-jasmine": "~0.1.5",
     "karma-junit-reporter": "~0.2.1",
+    "karma-ng-scenario": "^0.1.0",
     "karma-phantomjs-launcher": "^0.1.4",
     "yargs": "^1.2.1"
   },
   "scripts": {
-    "test": "bash scripts/test.sh"
+    "test": "bash scripts/test.sh",
+    "start": "http-server -a localhost -p 8000"
   },
   "repository": {
     "type": "git",

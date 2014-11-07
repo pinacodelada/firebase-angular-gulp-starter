@@ -1,9 +1,14 @@
 {
-  "firebase": "crackling-fire-8187",
-  "public": "build",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ]
+    "firebase": "crackling-fire-8187",
+    "public": "build",
+    "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+    ],
+    "rules": "rules.json",
+    "rewrites": [ {
+        "source": "**",
+        "destination": "/index.html"
+    } ]
 }

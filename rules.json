@@ -1,0 +1,28 @@
+{
+  "rules":{
+    ".write":"true&&true&&false&&true&&(!newData.child('syncedValue').parent().exists()||!(newData.child('syncedValue').parent().isString()||newData.child('syncedValue').parent().isNumber()||newData.child('syncedValue').parent().isBoolean()))&&(newData.child('syncedValue').parent().val()==null||true)&&true&&(!newData.child('syncedValue').exists()||newData.child('syncedValue').isString())&&(false||true&&(auth.id!==null||true))",
+    ".read":"false||true",
+    "messages": {
+      ".write":"true&&false&&(false||true&&(auth.id!==null||true))",
+      ".read":"false||true",
+      "$messageid": {
+        ".write":"true&&true&&(!newData.child('text').parent().parent().parent().exists()||!(newData.child('text').parent().parent().parent().isString()||newData.child('text').parent().parent().parent().isNumber()||newData.child('text').parent().parent().parent().isBoolean()))&&(newData.child('text').parent().parent().parent().val()==null||true)&&true&&(!newData.child('text').parent().parent().exists()||!(newData.child('text').parent().parent().isString()||newData.child('text').parent().parent().isNumber()||newData.child('text').parent().parent().isBoolean()))&&(newData.child('text').parent().parent().val()==null||true)&&true&&(!newData.child('text').parent().exists()||!(newData.child('text').parent().isString()||newData.child('text').parent().isNumber()||newData.child('text').parent().isBoolean()))&&(newData.child('text').parent().val()==null||true&&newData.child('text').parent().child('text').exists())&&true&&(!newData.child('text').exists()||newData.child('text').isString())&&true&&(!newData.child('something').parent().parent().parent().exists()||!(newData.child('something').parent().parent().parent().isString()||newData.child('something').parent().parent().parent().isNumber()||newData.child('something').parent().parent().parent().isBoolean()))&&(newData.child('something').parent().parent().parent().val()==null||true)&&true&&(!newData.child('something').parent().parent().exists()||!(newData.child('something').parent().parent().isString()||newData.child('something').parent().parent().isNumber()||newData.child('something').parent().parent().isBoolean()))&&(newData.child('something').parent().parent().val()==null||true)&&true&&(!newData.child('something').parent().exists()||!(newData.child('something').parent().isString()||newData.child('something').parent().isNumber()||newData.child('something').parent().isBoolean()))&&(newData.child('something').parent().val()==null||true&&newData.child('something').parent().child('text').exists())&&true&&(!newData.child('something').exists()||newData.child('something').isString())&&(false||true&&(auth.id!==null||true))",
+        ".read":"false||true",
+        "text": {
+          ".write":"true&&(!newData.parent().parent().parent().exists()||!(newData.parent().parent().parent().isString()||newData.parent().parent().parent().isNumber()||newData.parent().parent().parent().isBoolean()))&&(newData.parent().parent().parent().val()==null||true)&&true&&(!newData.parent().parent().exists()||!(newData.parent().parent().isString()||newData.parent().parent().isNumber()||newData.parent().parent().isBoolean()))&&(newData.parent().parent().val()==null||true)&&true&&(!newData.parent().exists()||!(newData.parent().isString()||newData.parent().isNumber()||newData.parent().isBoolean()))&&(newData.parent().val()==null||true&&newData.parent().child('text').exists())&&true&&(!newData.exists()||newData.isString())&&(false||true&&(auth.id!==null||true))",
+          ".read":"false||true"
+        },
+        "something": {
+          ".write":"true&&(!newData.parent().parent().parent().exists()||!(newData.parent().parent().parent().isString()||newData.parent().parent().parent().isNumber()||newData.parent().parent().parent().isBoolean()))&&(newData.parent().parent().parent().val()==null||true)&&true&&(!newData.parent().parent().exists()||!(newData.parent().parent().isString()||newData.parent().parent().isNumber()||newData.parent().parent().isBoolean()))&&(newData.parent().parent().val()==null||true)&&true&&(!newData.parent().exists()||!(newData.parent().isString()||newData.parent().isNumber()||newData.parent().isBoolean()))&&(newData.parent().val()==null||true&&newData.parent().child('text').exists())&&true&&(!newData.exists()||newData.isString())&&(false||true&&(auth.id!==null||true))",
+          ".read":"false||true"
+        },
+        "$other":{".validate":"false"}
+      }
+    },
+    "syncedValue": {
+      ".write":"true&&(!newData.parent().exists()||!(newData.parent().isString()||newData.parent().isNumber()||newData.parent().isBoolean()))&&(newData.parent().val()==null||true)&&true&&(!newData.exists()||newData.isString())&&(false||true&&(auth.id!==null||true))",
+      ".read":"false||true"
+    },
+    "$other":{".validate":"false"}
+  }
+}
